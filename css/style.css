@@ -251,7 +251,7 @@ header.sub__header {
 	color: #fff;
 	width: 100%;
 	font-family: 'Capriola', sans-serif;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	padding: 12px 0 0 0;
 }
 .navbar-default .navbar-brand a {
@@ -533,12 +533,25 @@ img.full-width {
 	background: url('../images/image_1920x919.jpg') no-repeat;
 	background-size: 100% 100%;
 }
+.heading__block.contact {
+	background: url('../images/image_1920x919.jpg') no-repeat;
+	background-size: 100% 100%;
+}
+.heading__block.our__blog {
+	background: url('../images/image_1920x919.jpg') no-repeat;
+	background-size: 100% 100%;
+}
 .heading__block h2 {
 	color: #fff;
 }
 .heading__block p {
 	text-transform: uppercase;
 	font-size: 14px;
+}
+
+.contact_pic {
+	background: url('../images/header/contact-us.jpg') no-repeat;
+	background-size: 100% 100%;
 }
 /*Icons Blocks*/
 
