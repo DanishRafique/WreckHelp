@@ -223,12 +223,21 @@ footer .btn-primary:hover, .btn-primary:focus {
 }
 /*Header*/
 
-header {
-	background: rgba(0,0,0,0.5);
-	margin-top: 30px;
+#mainHead,header {
+	/*background: rgba(0,0,0,0.5);*/
 	width: 100%;
 	position: relative;
 	z-index: 99;
+}
+#mainNav{
+	background: rgba(0,0,0,0.5) !important;
+	width: 100% !important;
+	
+}
+#mainHead.glass{
+    top:0;
+	position: fixed;
+	background: black;
 }
 header.sub__header {
 	background: #222;
@@ -1017,25 +1026,25 @@ header {
 }
 }
 .carousel-fade {
- .carousel-inner {
- .item {
- opacity: 0;
- transition-property: opacity;
+.carousel-inner {
+.item {
+    opacity: 0;
+    transition-property: opacity;
 }
- .active {
- opacity: 1;
+.active {
+    opacity: 1;
 }
- .active.left,  .active.right {
- left: 0;
- opacity: 0;
- z-index: 1;
+.active.left,  .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
 }
- .next.left,  .prev.right {
- opacity: 1;
+.next.left,  .prev.right {
+    opacity: 1;
 }
 }
 .carousel-control {
-	z-index: 2;
+    z-index: 2;
 }
 }
 .carousel-fade .carousel-inner .item {
@@ -1463,6 +1472,51 @@ margin-top:6px;
 
 .big-btn small{font-size: 75%;}
 
+.PlayStore{
+    width: 100%;
+    position: absolute;
+    top: 320px;
+    z-index: 999;
+    margin: 0 auto;
+    text-align: center;
+}
+.PlayStore a{
+    background: #000;
+    border: none;
+}
+.PlayStore small{
+    margin: 15px 10px 0 0;
+    float: left;
+    font-size: 9pt;
+    line-height: 3px;
+}
+.PlayStore strong{
+    margin: 15px 10px 0 0;
+    float: left;
+    font-size: 11pt;
+    line-height: 3px;
+}
+
+.PlayStore2{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+.PlayStore2 a{
+    background: #000;
+    border: none;
+}
+.PlayStore2 small{
+    margin: 15px 10px 0 0;
+    font-size: 10pt;
+    line-height: 3px;
+}
+.PlayStore2 strong{
+    margin: 15px 10px 0 0;
+    font-size: 12pt;
+    line-height: 3px;
+}
+
 .android-btn{
 
 width: 240px;
@@ -1470,6 +1524,9 @@ padding: 13px 17px 13px 0px;
 background-color: #000;
 border-color: #000;
 
+}
+.android-btn img{
+    background-repeat: no-repeat;
 }
 .android-btn:hover{
 background-color: #272727;
