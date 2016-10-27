@@ -3,12 +3,13 @@
 <head>
 <title>Reponsive HTML Template</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Capriola' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
-<link href="css/style.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="shortcodes/shortcodes.css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Capriola' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="shortcodes/shortcodes.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,7 +18,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body ng-app="myApp">
 <header class="sub__header">
   <div class="container">
     <nav class="navbar navbar-default" role="navigation"> 
@@ -39,7 +40,7 @@
               <li><a href="shortcodes.html">Shortcodes</a></li>
               <li><a href="store.html">Web Store</a></li>
               <li><a href="blog.html">Blog & News</a></li>
-              <li><a href="tables.html">Tables</a></li>
+              <li><a href="result.html">Tables</a></li>
               <li><a href="faq.html">FAQ</a></li>
             </ul>
           </li>
@@ -60,68 +61,42 @@
       <p class="big-paragraph">Create stylish data & pricing tables quickly with pre-built CSS classes.</p>
     </div>
   </div>
-  <div class="container">
+  <div class="container" ng-controller="searchCtrl">
+      <div class="row searchbar">
+              <input class="form-control" type="search" placeholder="Search by city" ng-model="searchQuery">
+      </div>
     <div class="row no_padding nothing no-margin">
       
-      <h3>Table styles 12</h3>
-      <table class="dc_table_s12" summary="Sample Table" style="width:100%;">
-        <caption>
+      <h3 id="type_heading" ng-bind="type"></h3>
+      <table class="dc_table_s12" style="width:100%;">
+        <!--<caption>
         Table 12: Sample Table
-        </caption>
+        </caption>-->
         <thead>
-          <tr>
-            <th scope="col">Structure</th>
-            <th scope="col">Country</th>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Address</th>
             <th scope="col">City</th>
-            <th scope="col">Height</th>
-            <th scope="col">Built</th>
-            <th scope="col">Rank</th>
-            <th scope="col">...</th>
-          </tr>
+            <th scope="col">Zipcode</th>
+
+        </tr>
         </thead>
-        <tfoot>
+        <!--<tfoot>
           <tr>
             <th scope="row">Total</th>
             <td colspan="7">4 buildings</td>
           </tr>
-        </tfoot>
+        </tfoot>-->
         <tbody>
-          <tr >
-            <th scope="row">Burj Khalifa</th>
-            <td>UAE</td>
-            <td>Dubai</td>
-            <td>829m</td>
-            <td>2010</td>
-            <td>1</td>
-            <td><a href="#">details</a></td>
+          <tr ng-repeat="r in res | filter:{city: searchQuery}">
+            <td>{{r.name}}</td>
+            <td><a href="tel:{{r.phone}}" title="make a call">{{r.phone}}</a></td>
+            <td>{{r.addr}}</td>
+            <td>{{r.city}}</td>
+            <td>{{r.zip}}</td>
           </tr>
-          <tr class="odd">
-            <th scope="row">Clock Tower Hotel</th>
-            <td>Saudi Arabia</td>
-            <td>Mecca</td>
-            <td>601m</td>
-            <td>2012</td>
-            <td>2</td>
-            <td><a href="#">details</a></td>
-          </tr>
-          <tr >
-            <th scope="row">Taipei 101</th>
-            <td>Taiwan</td>
-            <td>Taipei</td>
-            <td>509m</td>
-            <td>2004</td>
-            <td>3</td>
-            <td><a href="#">details</a></td>
-          </tr>
-          <tr class="odd">
-            <th scope="row">Financial Center</th>
-            <td>China</td>
-            <td>Shanghai</td>
-            <td>492m</td>
-            <td>2008</td>
-            <td>4</td>
-            <td><a href="#">details</a></td>
-          </tr>
+
         </tbody>
       </table>
       
@@ -180,6 +155,8 @@
 <script type="text/javascript" src="js/jquery.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/bootstrap.min.js"></script> 
+
+<script src="js/result.js"></script>
 
 <!-- Shortcodes Toggle/SyntaxHighlighter // This can be removed on a live site -->
 <link type="text/css" rel="stylesheet" href="shortcodes/scodes_toggle/toggle.css">

@@ -230,6 +230,7 @@ footer .btn-primary:hover, .btn-primary:focus {
 	z-index: 99;
 }
 #mainNav{
+    padding: 0 5px;
 	background: rgba(0,0,0,0.5) !important;
 	width: 100% !important;
 	
@@ -1528,6 +1529,17 @@ margin-top:6px;
     margin: 15px 10px 0 0;
     font-size: 12pt;
     line-height: 3px;
+}
+
+.service-btn a{
+    margin-top: 3px !important;
+}
+
+.searchbar{
+    margin: 0 auto;
+}
+.searchbar input{
+    margin: 0 auto;
 }
 
 .android-btn{
