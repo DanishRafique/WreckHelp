@@ -11,7 +11,7 @@ angular.module('wreckhelpApp', [])
   
   $scope.videos = [
     {
-      name:'Uthapizza',
+      name:'YO YO',
       category: 'bikes',
       src:'https://www.youtube.com/embed/M2YLVFXqBWo',
       description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
@@ -19,14 +19,14 @@ angular.module('wreckhelpApp', [])
     },
     
 {
-      name:'Uthapizza',
+      name:'YO YO',
       category: 'cars',
       src:'https://www.youtube.com/embed/HfLVYr38D0Q',
       description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
       comment: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Nullam malesuada erat ut turpis.Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.'
     },
     {
-      name:'Uthapizza',
+      name:'YO YO',
       category: 'cars',
       src:'https://www.youtube.com/embed/M2YLVFXqBWo',
       description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
