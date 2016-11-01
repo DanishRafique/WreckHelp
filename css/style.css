@@ -586,6 +586,10 @@ img.full-width {
 	background: url('../images/header/contact-us.jpg') no-repeat;
 	background-size: 100% 100%;
 }
+.selfhelp_pic {
+	background: url('../images/header/selfhelp.jpg') no-repeat;
+	background-size: 100% 100%;
+}
 /*Icons Blocks*/
 
 .icons__blocks {
