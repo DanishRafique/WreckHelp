@@ -1712,3 +1712,7 @@ line-height: 24px;
 .breadcrumb-arrow li span {
     color: #434a54
 }
+
+.nav.nav-tabs li{
+	cursor: pointer;
+}

@@ -70,7 +70,7 @@
 
     <div class="container">
         <div class="row row-content" ng-controller="MenuController">
-            <div class="col-md-9">
+            <div class="col-md-8">
                 
                 <ul class="nav nav-tabs" role="tablist">
                     <li role="presentation" ng-class="{active:isSelected(1)}">
@@ -103,8 +103,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="container">
-                <div class="col-md-3">
+            <div> <!-- ----- changed-->
+                <div class="col-md-4">
                     <ul class="nav nav-tabs" role="tablist">
                         <li role="presentation" ng-class="{active:isSelected(1)}">
                             <a ng-click="select(1)" aria-controls="All" role="tab">All</a>
