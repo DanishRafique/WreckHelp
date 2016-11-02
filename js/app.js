@@ -11,6 +11,7 @@ angular.module('wreckhelpApp', [])
   
   $scope.videos = [
     {
+      id:'1',
       name:'YO YO',
       category: 'bikes',
       src:'https://www.youtube.com/embed/M2YLVFXqBWo',
@@ -19,6 +20,7 @@ angular.module('wreckhelpApp', [])
     },
     
 {
+	id:'2',
       name:'YO YO',
       category: 'cars',
       src:'https://www.youtube.com/embed/HfLVYr38D0Q',
@@ -26,6 +28,7 @@ angular.module('wreckhelpApp', [])
       comment: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Nullam malesuada erat ut turpis.Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.'
     },
     {
+    	id:'3',
       name:'YO YO',
       category: 'cars',
       src:'https://www.youtube.com/embed/M2YLVFXqBWo',
@@ -33,6 +36,7 @@ angular.module('wreckhelpApp', [])
       comment: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Nullam malesuada erat ut turpis.Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.'
     },
     {
+    	id:'4',
       name:'YO YO',
       category: 'trucks',
       src:'https://www.youtube.com/embed/M2YLVFXqBWo',
@@ -43,24 +47,28 @@ angular.module('wreckhelpApp', [])
 
   $scope.blogs=[
   	{
+  		id:'1',
   		title:'YO YO',
   		article:'Our friendly customer service representatives are committed to answering all your questions and meeting any need you may have. We would love to hear from you! Please fill out the form below so we may assist you.',
   		src:'images/content__images/image_240x100.jpg',
   		category: 'trucks'
   	},
   	{
+  		id:'2',
   		title:'YO YO',
   		article:'Our friendly customer service representatives are committed to answering all your questions and meeting any need you may have. We would love to hear from you! Please fill out the form below so we may assist you.',
   		src:'images/content__images/image_240x100.jpg',
   		category: 'bikes'
   	},
   	{
+  		id:'3',
   		title:'YO YO',
   		article:'Our friendly customer service representatives are committed to answering all your questions and meeting any need you may have. We would love to hear from you! Please fill out the form below so we may assist you.',
   		src:'images/content__images/image_240x100.jpg',
   		category: 'trucks'
   	},
   	{
+  		id:'4',
   		title:'YO YO',
   		article:'Our friendly customer service representatives are committed to answering all your questions and meeting any need you may have. We would love to hear from you! Please fill out the form below so we may assist you.',
   		src:'images/content__images/image_240x100.jpg',
