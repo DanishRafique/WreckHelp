@@ -12,14 +12,14 @@ angular.module('wreckhelpApp', [])
   $scope.videos = [
     {
       id:'1',
-      name:'YO YO',
+      name:'Motorcycle repair - Repairing a clutch',
       category: 'bikes',
-      src:'https://www.youtube.com/embed/M2YLVFXqBWo',
-      description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
-      comment: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Nullam malesuada erat ut turpis.Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.'
+      src:'https://www.youtube.com/watch?v=LnPktdVsIyU',
+      description:'If you want to know how to replace the clutch plates in your motorcycle, come and take a look, all motorbikes these days have more or less the same type of multi-plate wet clutch found in my 250cc Bodgeworx thumper, come and see exactly how it's done.',
+      comment: 'That's some nice work from the mechanic, and good thinking recording his work to do it yourself and save the cash.?'
     },
     
-{
+    {
 	id:'2',
       name:'YO YO',
       category: 'cars',
