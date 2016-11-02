@@ -14,9 +14,9 @@ angular.module('wreckhelpApp', [])
       id:'1',
       name:'Motorcycle repair - Repairing a clutch',
       category: 'bikes',
-      src:'https://www.youtube.com/watch?v=LnPktdVsIyU',
-      description:'If you want to know how to replace the clutch plates in your motorcycle, come and take a look, all motorbikes these days have more or less the same type of multi-plate wet clutch found in my 250cc Bodgeworx thumper, come and see exactly how it's done.',
-      comment: 'That's some nice work from the mechanic, and good thinking recording his work to do it yourself and save the cash.?'
+      src:'https://www.youtube.com/embed/LnPktdVsIyU',
+      description:'If you want to know how to replace the clutch plates in your motorcycle, come and take a look, all motorbikes these days have more or less the same type of multi-plate wet clutch found in my 250cc Bodgeworx thumper, come and see exactly how it\'s done.',
+      comment: 'That\'s some nice work from the mechanic, and good thinking recording his work to do it yourself and save the cash.?'
     },
     
     {
