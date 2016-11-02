@@ -21,11 +21,11 @@ angular.module('wreckhelpApp', [])
     
     {
 	id:'2',
-      name:'YO YO',
-      category: 'cars',
-      src:'https://www.youtube.com/embed/HfLVYr38D0Q',
-      description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
-      comment: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Nullam malesuada erat ut turpis.Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.'
+      name:'How to Adjust Motorcycle Engine Valve Clearance',
+      category: 'bikes',
+      src:'https://www.youtube.com/embed/-HxWAwA-FZo',
+      description:'This video shows how to check and adjust the valve clearance in a motorcycle engine.',
+      comment: 'I understood this better than the other videos, you actually show close up what you are doing'
     },
     {
     	id:'3',
