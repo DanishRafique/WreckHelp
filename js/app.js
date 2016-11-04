@@ -76,6 +76,9 @@ angular.module('wreckhelpApp', [])
   	},
   ];
 
+
+      $scope.searchValue = $scope.videos;
+
   $scope.select = function(setTab) {
     $scope.tab = setTab;
     
