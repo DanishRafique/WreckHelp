@@ -28,9 +28,9 @@
       <div class="navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li class="active"><a href="services.html">Services</a></li>
           <li><a href="selfhelp.html">Self Help</a></li>
-          <li class="active"><a href="roadmap.html">Road Maps</a></li>
+          <li><a href="roadmap.html">Road Maps</a></li>
           <li><a href="aboutus.html">About Us</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
@@ -42,23 +42,20 @@
 <div ng-controller="ContactController">
 <section class="main__middle__container">
   <section class="recent-posts">
-    <div class="row heading__block roadmap_pic nothing no-margin">
+    <div class="row heading__block services_pic nothing no-margin">
       <div class="container text-center">
-        <h1 style="color:white;text-align:left ">Road Map</h1>
-        <p class="big-paragraph" style="color:white;text-align:left ">Know the road Ahead</p>
+        <h1 style="color:white;text-align:left ">Services</h1>
+        <p class="big-paragraph" style="color:white;text-align:left ">The range of area we work on .</p>
       </div>
     </div><br />
     <div class="container">
-    <div class="col-md-4">
+        <div class="col-md-4">
               <ul class="breadcrumb breadcrumb-arrow">
                 <li><a href="index.html">Home</a> <span class="divider"></span></li>
-                <li class="active">Road Maps</li>
+                <li class="active">Services</li>
               </ul>
         </div>
         </div>
-    <div class='container'>
-      <iframe id="trackFrame" style="border-style: none;" src="index_iframe.html" height="800" width="1200"></iframe>
-    </div>
   </section>
 </section>
 </div>
@@ -119,13 +116,13 @@
                 var data3 = $('#email').val();
                 var data4 = $('#message').val();
         $.ajax({
-			type: "POST",
-			url: "send.php",
-			dataType : "json",
-			data: ( {"name" : data1, "subject" : data2, "email" : data3,"message" : data4} ) ,
-			   success: function() {
+      type: "POST",
+      url: "send.php",
+      dataType : "json",
+      data: ( {"name" : data1, "subject" : data2, "email" : data3,"message" : data4} ) ,
+         success: function() {
                                
-			   },
+         },
                            complete: function(){
                                 $('#feedback').append('<p>Thank you for sending us a message. Our specialists will contact you as soon as possible.</p><p>Your message details are:</p>\n\
                                 <ul>\n\

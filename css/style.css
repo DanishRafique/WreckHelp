@@ -594,6 +594,21 @@ img.full-width {
 	background: url('../images/header/roadmap.png') no-repeat;
 	background-size: 100% 100%;
 }
+
+.services_pic {
+	background: url('../images/header/services.jpg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.aboutus_pic {
+	background: url('../images/header/aboutus.jpg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.search_pic {
+	background: url('../images/header/search.png') no-repeat;
+	background-size: 100% 100%;
+}
 /*Icons Blocks*/
 
 .icons__blocks {
@@ -1748,17 +1763,15 @@ line-height: 24px;
 	vertical-align:top;
 }
 
+
+
 @media only screen and (max-width: 786px) {
 	.custom-tabs-wrapper{
 		padding: 0;
 	}
 }
 
-.aboutus_block {
-	background: url('../images/header/aboutus.jpg') no-repeat;
-	background-size: 100% 100%;
-	padding: 40px 0;
-}
+
 h1 {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-style: normal;
