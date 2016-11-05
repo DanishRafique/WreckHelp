@@ -12,7 +12,7 @@ angular.module('wreckhelpApp', [])
   $scope.videos = [
     {
       id:'1',
-      name:'Motorcycle repair - Repairing a clutch',
+      name:'Motorcycle repair - repairing a clutch',
       category: 'bikes',
       src:'https://www.youtube.com/embed/LnPktdVsIyU',
       description:'If you want to know how to replace the clutch plates in your motorcycle, come and take a look, all motorbikes these days have more or less the same type of multi-plate wet clutch found in my 250cc Bodgeworx thumper, come and see exactly how it\'s done.',
@@ -20,7 +20,7 @@ angular.module('wreckhelpApp', [])
     },
     
     {
-	id:'2',
+	    id:'2',
       name:'How to Adjust Motorcycle Engine Valve Clearance',
       category: 'bikes',
       src:'https://www.youtube.com/embed/-HxWAwA-FZo',
@@ -29,20 +29,85 @@ angular.module('wreckhelpApp', [])
     },
     {
     	id:'3',
-      name:'YO YO',
-      category: 'cars',
-      src:'https://www.youtube.com/embed/M2YLVFXqBWo',
-      description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
-      comment: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Nullam malesuada erat ut turpis.Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.'
+      name:'Rear Derailleur Adjustment',
+      category: 'bikes',
+      src:'https://www.youtube.com/embed/g_bGcuezsIo',
+      description:'How to properly adjust a bicycle rear derailleur.',
+      comment: 'Wow!...Ive never seen it explained so easily. Do you have a video on the front derailleur?'
     },
     {
     	id:'4',
-      name:'YO YO',
-      category: 'trucks',
-      src:'https://www.youtube.com/embed/M2YLVFXqBWo',
-      description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
-      comment: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Nullam malesuada erat ut turpis.Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.'
+      name:'BIKE ENGINE REPAIRING',
+      category: 'bikes',
+      src:'https://www.youtube.com/embed/6pzF8KKX4X8',
+      description:'How to repair an engine',
+      comment: 'Nice video!!'
     },
+    {
+    	id:'5',
+      name:'Car Panel Repair by 3M Bodyshop',
+      category: 'cars',
+      src:'https://www.youtube.com/embed/hcm_5ZzOkZo',
+      description:'3M shows the car panel repair process using a range of industry accepted products, from paint removing abrasives to application of body filler using 3M\'s Dynamic Mixing System',
+      comment: 'All hail God emperor Gary! May his soul live eternally!Great Video'
+    },
+    {
+    	id:'6',
+      name:'Large Damage Bumper Repair',
+      category: 'cars',
+      src:'https://www.youtube.com/embed/_ZedfGIP1aY',
+      description:'How to repair a bumper damage',
+      comment: 'Would love to see more of your videos'
+    },
+    {
+    	id:'7',
+      name:'Extreme Dent Removal',
+      category: 'cars',
+      src:'https://www.youtube.com/embed/oqMdKLES7bc',
+      description:'Extreme Dent Removal performed on a Mini One',
+      comment: 'Crazy how he did that all in 5 minutes.'
+    },
+    {
+    	id:'8',
+      name:'How to Remove Scratches from Car PERMANENTLY',
+      category: 'cars',
+      src:'https://www.youtube.com/embed/2nYF46P7B2c',
+      description:'Fix scratches on car.',
+      comment: 'Awesome video!.I like the way you explain'
+    },
+    {
+    	id:'9',
+      name:'How to change axle seal on semi truck',
+      category: 'trucks',
+      src:'https://www.youtube.com/embed/ZNw5wYmektE',
+      description:'Changing axle seal while doing a brake job on my truck.',
+      comment: 'Great video, currently in school to be a truck tech and watching your videos gives me an idea before doing labs, Keep on going man'
+    },
+    {
+    	id:'10',
+      name:'Clutch installation',
+      category: 'trucks',
+      src:'https://www.youtube.com/embed/eOlZJjiEE0A',
+      description:'how to install a heavy duty clutch',
+      comment: 'Thats a Valeo clutch, seen a few during the mid 1990s. Not one that I would recommend for the fact if you do not lock the adjustment spool the clutch is toast.'
+    },
+    {
+    	id:'11',
+      name:'How To Replace Brakes On A Dump Truck',
+      category: 'trucks',
+      src:'https://www.youtube.com/embed/6BkWKFB6b3I',
+      description:'Replacing Bikes',
+      comment: 'Keep rocking man!!'
+    },
+    {
+    	id:'12',
+      name:'Outside Semi Tire Repair',
+      category: 'trucks',
+      src:'https://www.youtube.com/embed/9-Y41reTuMU',
+      description:'Tire Repairing',
+      comment: 'Damm u  do it just like I used to before my accident'
+    },
+
   ]; 
 
   $scope.blogs=[
