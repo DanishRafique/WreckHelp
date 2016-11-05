@@ -51,9 +51,9 @@
               <li><a href="faq.html">FAQ</a></li>
             </ul>
           </li>
-          <li class="active"><a href="left_sidebar.html">Self Help</a></li>
+          <li class="active"><a href="selfhelp.html">Self Help</a></li>
           <li><a href="right_sidebar.html">Road Maps</a></li>
-          <li><a href="full_width.html">About Us</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
@@ -68,10 +68,38 @@
       </div>
     </div>
 
+<div ng-controller="MenuController">
+
     <div class="container">
-        <div class="row row-content" ng-controller="MenuController">
-            <div class="col-md-8">
-                
+        <div class="row searchbar">
+            <input class="form-control" type="search" placeholder="Search by problem" ng-model="searchQuery">
+        </div>
+    </div>
+
+
+    <div ng-if="searchQuery" class="custom-container">
+        <!--<div class="tab-content">-->
+            <ul class="media-list">
+                <li class="media" ng-repeat="video in searchValue | filter:{name:searchQuery}">
+                    <div class="media-left media_middle">
+                        <iframe width="560" height="315" ng-src="{{video.src | trustAsResourceUrl}}" frameborder="0"></iframe>
+                    </div>
+                    <div class="media-body">
+                        <br/>
+                        <h3 class="media-heading">{{video.name}}
+                            <span class="label label-danger">{{video.label}}</span></h3><br/>
+                        <p>{{video.comment}}</p><br />
+                    </div>
+                </li>
+            </ul>
+        <!--</div>-->
+    </div>
+
+
+    <div ng-if="!searchQuery">
+    <div class="container custom-tabs-wrapper">
+        <div class="row text-center custom-tabs">
+            <div class="col-sm-12">
                 <ul class="nav nav-tabs" role="tablist">
                     <li role="presentation" ng-class="{active:isSelected(1)}">
                         <a ng-click="select(1)" aria-controls="All" role="tab">All</a>
@@ -85,7 +113,29 @@
                     <li role="presentation" ng-class="{active:isSelected(4)}">
                         <a ng-click="select(4)" aria-controls="trucks" role="tab">Trucks</a>
                     </li>
-                </ul><br />
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-content" >
+            <div class="col-md-8">
+                
+                <!--<ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" ng-class="{active:isSelected(1)}">
+                        <a ng-click="select(1)" aria-controls="All" role="tab">All</a>
+                    </li>
+                    <li role="presentation" ng-class="{active:isSelected(2)}">
+                        <a ng-click="select(2)" aria-controls="bikes" role="tab">Bikes</a>
+                    </li>
+                    <li role="presentation" ng-class="{active:isSelected(3)}">
+                        <a ng-click="select(3)" aria-controls="cars" role="tab">Cars</a>
+                    </li>
+                    <li role="presentation" ng-class="{active:isSelected(4)}">
+                        <a ng-click="select(4)" aria-controls="trucks" role="tab">Trucks</a>
+                    </li>
+                </ul>--><br />
 
                 <div class="tab-content">
                     <ul class="media-list tab-pane fade in active">
@@ -105,7 +155,7 @@
             </div>
             <div> <!-- ----- changed-->
                 <div class="col-md-4">
-                    <ul class="nav nav-tabs" role="tablist">
+                    <!--<ul class="nav nav-tabs" role="tablist">
                         <li role="presentation" ng-class="{active:isSelected(1)}">
                             <a ng-click="select(1)" aria-controls="All" role="tab">All</a>
                         </li>
@@ -118,7 +168,7 @@
                         <li role="presentation" ng-class="{active:isSelected(4)}">
                             <a ng-click="select(4)" aria-controls="trucks" role="tab">Trucks</a>
                         </li>
-                    </ul><br />
+                    </ul>--><br />
                     <div class="tab-content">
                     <ul class="media-list tab-pane fade in active">
                         <li class="media" ng-repeat="blog in blogs |
@@ -135,6 +185,8 @@
                 </div>
                 </div>
             </div>
+    </div>
+</div>
     <footer>
   <div class="container">
     <div class="row">
