@@ -589,6 +589,11 @@ img.full-width {
 	background: url('../images/header/selfhelp.jpg') no-repeat 50% 0;
 	background-size: cover;
 }
+
+.roadmap_pic {
+	background: url('../images/header/roadmap.png') no-repeat;
+	background-size: 100% 100%;
+}
 /*Icons Blocks*/
 
 .icons__blocks {
