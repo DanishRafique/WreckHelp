@@ -106,7 +106,7 @@ angular.module('wreckhelpApp', [])
       src:'https://www.youtube.com/embed/9-Y41reTuMU',
       description:'Tire Repairing',
       comment: 'Damm u  do it just like I used to before my accident'
-    },
+    }
 
   ]; 
 
