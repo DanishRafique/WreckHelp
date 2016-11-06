@@ -24,13 +24,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <style>
-        html,body{
-            overflow-x: hidden;
-        }
-    </style>
-
 </head>
 
 <body>
@@ -73,7 +66,7 @@
         </div>
 
 <div ng-controller="MenuController">
-<!--<div class="container">
+<div class="container">
     <div class="row searchbar">
     <div class="form-group">
       <div class="input-group">
@@ -83,21 +76,16 @@
       </div>
     </div>
     </div>
-    </div>-->
-
-    <div class="container">
-        <div class="row searchbar col-md-12">
-            <input id="sb2" class="form-control" type="search" placeholder="Search by problem" ng-model="searchQuery">
+    </div>
 
     <!--<div class="container">
         <div class="row searchbar col-md-10" >
             <input class="form-control" type="search" placeholder="Search by problem" ng-model="searchQuery">
--->
         </div>
-    </div>
+    </div>-->
 
 
-    <div ng-if="searchQuery" class="custom-container">
+    <div ng-if="showSelf" class="custom-container">
         <!--<div class="tab-content">-->
             <ul class="media-list">
                 <li class="media" ng-repeat="video in searchValue | filter:{name:searchQuery}">
@@ -115,7 +103,7 @@
     </div>
 
 
-    <div ng-if="!searchQuery">
+    <div ng-if="!showSelf">
     <div class="container custom-tabs-wrapper">
         <div class="row text-center custom-tabs">
             <div class="col-sm-12">

@@ -142,12 +142,12 @@ angular.module('wreckhelpApp', [])
   	},
   ];
 
-      $scope.searchValue = $scope.videos;
+
       
-    /*$scope.submitFilter=function(){
+    $scope.submitFilter=function(){
       $scope.searchValue = $scope.videos;
       $scope.showSelf = true;
-    };*/
+    };
 
   $scope.select = function(setTab) {
     $scope.tab = setTab;
