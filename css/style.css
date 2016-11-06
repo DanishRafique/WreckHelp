@@ -1749,8 +1749,7 @@ line-height: 24px;
 	color: white !important;
 }
 .custom-tabs{
-	padding-top: 30px !important;
-	padding-bottom: 0 !important;
+    padding: 30px 0 0 0 !important;
 	margin-bottom: 0 !important;
 }
 .custom-tabs a{
@@ -1810,6 +1809,23 @@ line-height: 24px;
 .service-wrapper p{
 	color: #707174;
 }
+
+#sb2::-webkit-input-placeholder{
+    font-size: 20pt;
+}
+#sb2{
+    height: 60px;
+    border: none;
+    border-bottom: 5px solid #1bc161;
+    background: white;
+}
+#sb2:active,
+#sb2:focus{
+    -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
 
 h1 {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
