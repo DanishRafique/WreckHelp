@@ -581,6 +581,7 @@ img.full-width {
 	font-size: 14px;
 }
 
+
 .contact_pic {
 	background: url('../images/header/contact-us.jpg') no-repeat;
 	background-size: 100% 100%;
@@ -607,6 +608,11 @@ img.full-width {
 
 .search_pic {
 	background: url('../images/header/search.png') no-repeat;
+	background-size: 100% 100%;
+}
+.secondhead_pic {
+	background: url('../images/index/roadcar.jpg') no-repeat;
+	opacity: 0.8;
 	background-size: 100% 100%;
 }
 /*Icons Blocks*/
