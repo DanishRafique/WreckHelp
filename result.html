@@ -62,10 +62,21 @@
         </div>
 </section>
   <div class="container" ng-controller="searchCtrl">
-      <div class="row searchbar">
-              <input class="form-control" type="search" placeholder="Search by city" ng-model="searchQuery">
+      <div class="container">
+        <h3 id="type_heading" ng-bind="type"></h3>
       </div>
-    <div class="row no_padding nothing no-margin">
+      <div class="container">
+      <div class="row searchbar">
+      <div class="form-group">
+      <div class="input-group">
+        <input class="form-control" type="search" name="Search by City" placeholder="Search by City" ng-model="searchQuery" required/>
+          <span class="input-group-btn">
+            <button class="btn btn-success" type="submit" ng-model="searchButton" ng-click="submitFilter()"><span class="glyphicon glyphicon-search" aria-hidden="true"><span style="margin-left:10px;">Search</span></button></span></span>
+      </div>
+      </div>
+      </div>
+      </div>
+    <div class="row no_padding nothing no-margin"  ng-if="showSelf">
       
       <h3 id="type_heading" ng-bind="type"></h3>
       <table class="dc_table_s12" style="width:100%;">

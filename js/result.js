@@ -10,12 +10,21 @@ app.controller('searchCtrl', function($scope, $http) {
 
     var url = "";
 
+    $scope.showSelf = false;
+
+    $scope.submitFilter=function(){
+      $scope.searchValue = $scope.videos;
+      $scope.showSelf = true;
+    };
+
     switch(type){
         case 'police': url = "http://wh.aptitudo.in/php/load_police.php"; break;
         case 'petrol': url = "http://wh.aptitudo.in/php/load_petrol.php"; break;
         case 'ambulance': url = "http://wh.aptitudo.in/php/load_ambulance.php"; break;
         case 'mechanic': url = "http://wh.aptitudo.in/php/load_mechanic.php"; break;
     }
+
+
 
     $scope.res = [];
     $http({

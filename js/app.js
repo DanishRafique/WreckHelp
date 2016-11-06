@@ -8,6 +8,7 @@ angular.module('wreckhelpApp', [])
   $scope.tab = 1;
   $scope.filtText = '';
   $scope.showDetails=false;
+  $scope.showSelf = false;
   
   $scope.videos = [
     {
@@ -142,7 +143,11 @@ angular.module('wreckhelpApp', [])
   ];
 
 
+      
+    $scope.submitFilter=function(){
       $scope.searchValue = $scope.videos;
+      $scope.showSelf = true;
+    };
 
   $scope.select = function(setTab) {
     $scope.tab = setTab;
