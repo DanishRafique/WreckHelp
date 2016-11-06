@@ -73,7 +73,7 @@
         </div>
 
 <div ng-controller="MenuController">
-<div class="container">
+<!--<div class="container">
     <div class="row searchbar">
     <div class="form-group">
       <div class="input-group">
@@ -83,22 +83,21 @@
       </div>
     </div>
     </div>
-    </div>
+    </div>-->
 
-<<<<<<< HEAD
     <div class="container">
         <div class="row searchbar col-md-12">
             <input id="sb2" class="form-control" type="search" placeholder="Search by problem" ng-model="searchQuery">
-=======
+
     <!--<div class="container">
         <div class="row searchbar col-md-10" >
             <input class="form-control" type="search" placeholder="Search by problem" ng-model="searchQuery">
->>>>>>> origin/master
+-->
         </div>
-    </div>-->
+    </div>
 
 
-    <div ng-if="showSelf" class="custom-container">
+    <div ng-if="searchQuery" class="custom-container">
         <!--<div class="tab-content">-->
             <ul class="media-list">
                 <li class="media" ng-repeat="video in searchValue | filter:{name:searchQuery}">
@@ -116,7 +115,7 @@
     </div>
 
 
-    <div ng-if="!showSelf">
+    <div ng-if="!searchQuery">
     <div class="container custom-tabs-wrapper">
         <div class="row text-center custom-tabs">
             <div class="col-sm-12">
