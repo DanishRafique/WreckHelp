@@ -66,26 +66,26 @@
         </div>
 
 <div ng-controller="MenuController">
-<!--<div class="container">
+<div class="container">
     <div class="row searchbar">
     <div class="form-group">
-      &lt;!&ndash;<div class="input-group">&ndash;&gt;
+      <div class="input-group">
         <input class="form-control" type="search" name="search" placeholder="Search" ng-model="searchQuery" required/>
-          &lt;!&ndash;<span class="input-group-btn">
+          <span class="input-group-btn">
             <button class="btn btn-success" type="submit" ng-model="searchButton" ng-click="submitFilter()"><span class="glyphicon glyphicon-search" aria-hidden="true"><span style="margin-left:10px;">Search</span></button></span></span>
-      </div>&ndash;&gt;
+      </div>
     </div>
     </div>
-    </div>-->
+    </div>
 
-    <div class="container">
-        <div class="row searchbar col-md-12" >
+    <!--<div class="container">
+        <div class="row searchbar col-md-10" >
             <input class="form-control" type="search" placeholder="Search by problem" ng-model="searchQuery">
         </div>
-    </div>
+    </div>-->
 
 
-    <div ng-if="searchQuery" class="custom-container">
+    <div ng-if="showSelf" class="custom-container">
         <!--<div class="tab-content">-->
             <ul class="media-list">
                 <li class="media" ng-repeat="video in searchValue | filter:{name:searchQuery}">
@@ -94,7 +94,7 @@
                     </div>
                     <div class="media-body">
                         <br/>
-                        <h3 class="media-head">{{video.name}}<br/></h3>
+                        <h3 class="media-heading">{{video.name}}<br/></h3>
                         <p>{{video.description}}</p><br/>
                     </div>
                 </li>
@@ -103,7 +103,7 @@
     </div>
 
 
-    <div ng-if="!searchQuery">
+    <div ng-if="!showSelf">
     <div class="container custom-tabs-wrapper">
         <div class="row text-center custom-tabs">
             <div class="col-sm-12">
