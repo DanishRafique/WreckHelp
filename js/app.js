@@ -139,15 +139,15 @@ angular.module('wreckhelpApp', [])
   		article:'Our friendly customer service representatives are committed to answering all your questions and meeting any need you may have. We would love to hear from you! Please fill out the form below so we may assist you.',
   		src:'images/content__images/image_240x100.jpg',
   		category: 'cars'
-  	}
+  	},
   ];
 
 
-      $scope.searchValue = $scope.videos;
-    /*$scope.submitFilter=function(){
+      
+    $scope.submitFilter=function(){
       $scope.searchValue = $scope.videos;
       $scope.showSelf = true;
-    };*/
+    };
 
   $scope.select = function(setTab) {
     $scope.tab = setTab;
