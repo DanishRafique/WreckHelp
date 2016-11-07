@@ -122,24 +122,35 @@ angular.module('wreckhelpApp', [])
   	},
   	{
   		id:'2',
-  		title:'YO YO',
-  		article:'Our friendly customer service representatives are committed to answering all your questions and meeting any need you may have. We would love to hear from you! Please fill out the form below so we may assist you.',
-  		src:'images/content__images/image_240x100.jpg',
-  		category: 'bikes'
+  		title:'Car Mechanic Mag',
+  		article:'Car Mechanics magazine is packed with essential advice on maintaining and repairing popular makes and models. It\'s an invaluable motoring resource that appeals to both the DIY car enthusiast at home and the more experienced motor trade professional. Many cool stuff can be found in its online version',
+  		src:'images/selfhelp/carmechanic.jpg',
+  		link:'http://www.carmechanicsmag.co.uk/home',
+  		category:'cars'
   	},
   	{
   		id:'3',
-  		title:'YO YO',
-  		article:'Our friendly customer service representatives are committed to answering all your questions and meeting any need you may have. We would love to hear from you! Please fill out the form below so we may assist you.',
-  		src:'images/content__images/image_240x100.jpg',
+  		title:'Auto Repair Yourself',
+  		article:'An auto repair problem is something nobody wants. But after so many miles, auto parts wear out and fail, and have to be replaced. All vehicles also require a certain amount of maintenance like oil and filter changes, new brake linings, tires and so on. Whether you choose to do the auto repairs yourself or to take your vehicle to a repair shop or dealership, it is always a good idea to learn as much as possible about any auto repairs that might be needed beforehand.',
+  		src:'images/selfhelp/autorepairyourself.jpg',
+  		link:'http://www.autorepairyourself.com/',
   		category: 'trucks'
   	},
   	{
   		id:'4',
-  		title:'YO YO',
-  		article:'Our friendly customer service representatives are committed to answering all your questions and meeting any need you may have. We would love to hear from you! Please fill out the form below so we may assist you.',
-  		src:'images/content__images/image_240x100.jpg',
+  		title:'MeriCar',
+  		article:'MeriCAR.com is helping car owners to search nearest Maruti, Hyundai, Tata and Other Authorized and Multibrand Car Service station,  Carnation, Mahindra First Choice Service, Bosch Car Service and Local Repair Shops and small car garages in India.',
+  		src:'images/selfhelp/mericar.jpg',
+  		link:'http://www.mericar.com/car_service_center/',
   		category: 'cars'
+  	},
+  	{
+  		id:'5',
+  		title:'Gear6',
+  		article: 'Bike Maintenance Made Easy . Just hit gear6.in and select the service that you need. They will pick your bike from home/office. They will drop your bike right back to your doorstep after repair.',
+  		src:'images/selfhelp/gear6.png',
+  		link:'https://www.gear6.in/',
+  		category: 'bikes'
   	},
   ];
 
