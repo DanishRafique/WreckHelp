@@ -38,7 +38,7 @@ angular.module('wreckhelpApp', [])
     },
     {
     	id:'4',
-      name:'BIKE ENGINE REPAIRING',
+      name:'Bike Engine Repairing',
       category: 'bikes',
       src:'https://www.youtube.com/embed/6pzF8KKX4X8',
       description:'How to repair an engine',
@@ -70,7 +70,7 @@ angular.module('wreckhelpApp', [])
     },
     {
     	id:'8',
-      name:'How to Remove Scratches from Car PERMANENTLY',
+      name:'How to remove scratches from car permanently',
       category: 'cars',
       src:'https://www.youtube.com/embed/2nYF46P7B2c',
       description:'Fix scratches on car.',
@@ -151,6 +151,38 @@ angular.module('wreckhelpApp', [])
   		src:'images/selfhelp/gear6.png',
   		link:'https://www.gear6.in/',
   		category: 'bikes'
+  	},
+  	{
+  		id:'6',
+  		title:'Drivojoy',
+  		article: 'Be it your home, office or anywhere else, our mechanics will tend to your bike in 90min* so you don’t have to spend an entire day in the garage',
+  		src:'images/selfhelp/drivojoy.jpg',
+  		link:'http://www.drivojoy.com/',
+  		category: 'bikes'
+  	},
+  	{
+  		id:'7',
+  		title:'Gaadi360',
+  		article: 'Book your motorbike service. Its easy, convenient and with zero booking charges . Your motorbike will be picked, serviced and delivered to you, at no extra cost .',
+  		src:'images/selfhelp/gaadi360.png',
+  		link:'https://gaadi360.com/',
+  		category: 'bikes'
+  	},
+  	{
+  		id:'8',
+  		title:'JR Truck Service',
+  		article: 'Here at JR Truck Repair Service we deal with all of our customers on a close 1 on 1 basis, the goal is to  always  offer a very personalized and satisfying truck repair experience. The needs of the customer always  come first and that is  why we are  100%  service  oriented.',
+  		src:'images/selfhelp/jr.png',
+  		link:'http://www.jrtruckrepairservice.com/',
+  		category: 'trucks'
+  	},
+  	{
+  		id:'9',
+  		title:'WoodDale',
+  		article: 'Your diesel truck or heavy machinery can face a variety of problems. Located in Kolkata, Wooddale Truck Repair Service Inc. specializes in diesel truck repairs to get you back on the road with quality repairs. From a simple brake job to diesel transmission and engine repairs, our diesel mechanics have you covered. At Wooddale Truck Repair we have broad capability and can manage maintenance on tractors, engines, and trailers of all makes and types.',
+  		src:'images/selfhelp/wooddale.png',
+  		link:'http://wtrsbr.com/',
+  		category: 'trucks'
   	},
   ];
 
