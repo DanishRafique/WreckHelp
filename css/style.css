@@ -1880,6 +1880,24 @@ pre {
 	line-height: 18.5714px;
 }
 
+.grow {
+  -webkit-transition:all 0.5s ease-out;
+  -moz-transition:all 0.5s ease-out;
+  -ms-transition:all 0.5s ease-out;
+  -o-transition:all 0.5s ease-out;
+  transition:all 0.5s ease-out;
+
+}
+
+.grow:active {
+  -webkit-transform:scale(.7);
+  -moz-transform:scale(.7);
+  -ms-transform:scale(.7);
+  -o-transform:scale(.7);
+  transform:scale(.7);
+}
+
+.btn:focus {outline:0;}
 
 
 
