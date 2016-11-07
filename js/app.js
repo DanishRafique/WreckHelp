@@ -114,10 +114,11 @@ angular.module('wreckhelpApp', [])
   $scope.blogs=[
   	{
   		id:'1',
-  		title:'YO YO',
-  		article:'Our friendly customer service representatives are committed to answering all your questions and meeting any need you may have. We would love to hear from you! Please fill out the form below so we may assist you.',
-  		src:'images/content__images/image_240x100.jpg',
-  		category: 'trucks'
+  		title:'Humble Mechanics',
+  		article:'A behind the scene look at Volkswagen repair, dealership life, and the crazy things that mechanics see.This site was built to help everyone. It does not matter what type of car you own. Many of the things they talk about do not apply to just Volkswagens.',
+  		src:'images/selfhelp/humblemechanic.jpg',
+  		link:'http://humblemechanic.com/',
+  		category: 'cars'
   	},
   	{
   		id:'2',

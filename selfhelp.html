@@ -181,7 +181,7 @@
                          filter:filtText">
                             <div class="icon-item"> <img ng-src="{{blog.src}}" alt="small-post-img" class="img-responsive">
                             <br/>
-                                <h4><a href="#">{{blog.title}}</a></h4><br/>
+                                <h4><a href="{{blog.link | trustAsResourceUrl}}">{{blog.title}}</a></h4><br/>
                                 <p>{{blog.article}}</p>
                             </div>
                         </li>
