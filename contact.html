@@ -185,7 +185,7 @@
                 var data4 = $('#message').val();
         $.ajax({
 			type: "POST",
-			url: "send.php",
+			url: "",
 			dataType : "json",
 			data: ( {"name" : data1, "subject" : data2, "email" : data3,"message" : data4} ) ,
 			   success: function() {

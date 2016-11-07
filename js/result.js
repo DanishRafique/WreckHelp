@@ -10,12 +10,6 @@ app.controller('searchCtrl', function($scope, $http) {
 
     var url = "";
 
-    $scope.showSelf = false;
-
-    $scope.submitFilter=function(){
-      $scope.searchValue = $scope.videos;
-      $scope.showSelf = true;
-    };
 
     switch(type){
         case 'police': url = "http://wh.aptitudo.in/php/load_police.php"; break;
@@ -24,7 +18,7 @@ app.controller('searchCtrl', function($scope, $http) {
         case 'mechanic': url = "http://wh.aptitudo.in/php/load_mechanic.php"; break;
     }
 
-
+    $scope.err_msg = "Loading...";
 
     $scope.res = [];
     $http({
@@ -37,8 +31,10 @@ app.controller('searchCtrl', function($scope, $http) {
             angular.forEach(response.data.children, function(i){
                 $scope.res.push(i.data);
             });
+            $scope.err_msg = "Nothing found";
         })
         .error(function(){
             alert("Error");
+            $scope.err_msg = "Error loading";
         });
 });

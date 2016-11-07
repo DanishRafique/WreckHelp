@@ -63,23 +63,24 @@
 </section>
   <div class="container" ng-controller="searchCtrl">
       <div class="container">
-        <h3 id="type_heading" ng-bind="type"></h3>
-      </div>
-      <div class="container">
       <div class="row searchbar">
       <div class="form-group">
-      <div class="input-group">
+          <div class="input-group">
         <input class="form-control" type="search" name="Search by City" placeholder="Search by City" ng-model="searchQuery" required/>
-          <span class="input-group-btn">
-            <button class="btn btn-success" type="submit" ng-model="searchButton" ng-click="submitFilter()"><span class="glyphicon glyphicon-search" aria-hidden="true"><span style="margin-left:10px;">Search</span></button></span></span>
+              <span class="input-group-btn"><a class="btn btn-success"><span class="glyphicon glyphicon-search"></span></a></span>
+          </div>
       </div>
       </div>
       </div>
-      </div>
-    <div class="row no_padding nothing no-margin"  ng-if="showSelf">
+    <div class="row no_padding nothing no-margin">
       
       <h3 id="type_heading" ng-bind="type"></h3>
-      <table class="dc_table_s12" style="width:100%;">
+
+        <div class="well well-sm text-center" ng-show="!res_filter[0]">
+            <h3 ng-bind="err_msg"></h3>
+        </div>
+
+      <table class="dc_table_s12" style="width:100%;" ng-hide="!res_filter[0]">
         <!--<caption>
         Table 12: Sample Table
         </caption>-->
@@ -100,7 +101,7 @@
           </tr>
         </tfoot>-->
         <tbody>
-          <tr ng-repeat="r in res | filter:{city: searchQuery}">
+          <tr ng-repeat="r in res_filter = (res | filter:{city: searchQuery})">
             <td>{{r.name}}</td>
             <td><a href="tel:{{r.phone}}" title="make a call">{{r.phone}}</a></td>
             <td>{{r.addr}}</td>
