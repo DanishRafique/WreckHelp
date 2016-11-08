@@ -6,16 +6,16 @@ app.controller('searchCtrl', function($scope, $http) {
     }
     var type = window.location.toString().split("?")[1].split("=")[1];
 
-    $scope.type = "Searching for: " + type.toUpperCase();
+    $scope.type = "Need " + type.toUpperCase() + "? Check out the list below.";
 
     var url = "";
 
 
     switch(type){
-        case 'police': url = "http://wh.aptitudo.in/php/load_police.php"; break;
-        case 'petrol': url = "http://wh.aptitudo.in/php/load_petrol.php"; break;
-        case 'ambulance': url = "http://wh.aptitudo.in/php/load_ambulance.php"; break;
-        case 'mechanic': url = "http://wh.aptitudo.in/php/load_mechanic.php"; break;
+        case 'police': url = "http://wh.aptitudo.in/php/load_police.php"; $scope.type = "Lets find the nearest " + type.toUpperCase() + " STATION for you!"; break;
+        case 'petrol': url = "http://wh.aptitudo.in/php/load_petrol.php"; $scope.type = "Lets find the nearest " + type.toUpperCase() + " PUMP for you!"; break;
+        case 'ambulance': url = "http://wh.aptitudo.in/php/load_ambulance.php"; $scope.type = "Lets find the nearest " + type.toUpperCase() + " for you!"; break;
+        case 'mechanic': url = "http://wh.aptitudo.in/php/load_mechanic.php"; $scope.type = "Lets find the nearest " + type.toUpperCase() + " for you!"; break;
     }
 
     $scope.err_msg = "Loading...";
