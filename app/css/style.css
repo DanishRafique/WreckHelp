@@ -1905,6 +1905,9 @@ pre {
 
 .btn:focus {outline:0;}
 
+.inbody{
+	color:black;
+}
 
 
 @media only screen and (max-width: 786px) {
